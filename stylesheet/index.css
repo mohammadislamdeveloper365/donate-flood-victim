@@ -1,0 +1,47 @@
+.donate-header {
+    padding:15rem 32rem;
+    background-image: url('../images/donation9.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (min-width:1px) {
+    .donate-header {
+        padding:15rem 8rem;
+    }
+}
+
+@media only screen and (min-width:575px) {
+    .donate-header {
+        padding:15rem 12rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .donate-header {
+        padding:15rem 15rem;
+    }
+}
+@media only screen and (min-width:992px) {
+    .donate-header {
+        padding:15rem 18rem;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .donate-header {
+        padding:15rem 24rem;
+    }
+}
+@media only screen and (min-width:1400px) {
+    .donate-header {
+        padding:15rem 28rem;
+    }
+}
+
+
+
+
+
+
+
