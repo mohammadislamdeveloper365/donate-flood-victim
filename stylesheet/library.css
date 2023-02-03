@@ -18,7 +18,7 @@ CSS Framework/Library
 ----------------------
 */
 :root {
-    --primary-color:#03203C;
+    --primary-color:#370b8e;
     --secondary-color:rgb(3, 32, 60,0.2);
     --color-danger:#E21717;
     --color-dark: black;
@@ -53,30 +53,30 @@ Typography
 --------------------
 */
 h6{
-    font-size:1rem;
-}
-
-h5 {
-    font-size:1.6rem;
-}
-
-h4 {
     font-size:2rem;
 }
 
+h5 {
+    font-size:2.5rem;
+}
+
+h4 {
+    font-size:2.75rem;
+}
+
 h3 {
-    font-size:2.25rem;
+    font-size:3rem;
 }
 
 h2 {
-    font-size:3rem;
-}
-h1 {
     font-size:3.5rem;
 }
+h1 {
+    font-size:4rem;
+}
 
-p,a{
-    font-size:1.5rem;
+p,a,li{
+    font-size:1.75rem;
 }
 /*
 --------------------
@@ -194,18 +194,22 @@ COLOR--BACKGROUND COLOR
 Button
 --------------
 */
-.btn-primary {
+.btn {
     padding:0.5rem 1rem;
+    background-color:var(--color-light);
+    color:black;
+    border:none;
+    font-size: 1.5rem;
+}
+.btn-primary {
     background-color:var(--primary-color);
     color:white;
-    border:none;
+    
 }
 
 .btn-secondary {
-    padding:0.5rem 1rem;
     background-color:var(--secondary-color);
     color:white;
-    border:none;
 }
 
 

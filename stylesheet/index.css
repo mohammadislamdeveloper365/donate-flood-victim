@@ -2,10 +2,42 @@
     padding:15rem 32rem;
     background-image: url('../images/donation9.jpg');
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size:cover;
+}
+
+.donate-amount-container {
+    max-width:1000px;
+    margin:auto;
 }
 
 
+.donation-box {
+    padding:4rem 5rem;
+}
+
+.donation-box:nth-child(3){
+    border:1px solid brown;
+    background-color: rgb(255, 0, 0,0.5);
+}
+
+.donate-input {
+    border:none;
+    border-bottom:2px solid rgb(24, 23, 23);
+    width:70%;
+    font-size:1.5rem;
+}
+
+.donate-card-container {
+    max-width:1200px;
+    margin:auto;
+}
+.donation-card {
+    padding:2rem;
+    margin-right:4rem;
+}
+.rounded-1 {
+    border-radius:0.5rem;
+}
 @media only screen and (min-width:1px) {
     .donate-header {
         padding:15rem 8rem;
