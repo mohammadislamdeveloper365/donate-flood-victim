@@ -212,6 +212,10 @@ Button
     color:white;
 }
 
+.btn-danger {
+    background-color: var(--color-danger);
+    color:white;
+}
 
 /*
 ----------------
@@ -335,6 +339,9 @@ Display Value
     display:flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
 .d-block {
     display:block;
 }
@@ -388,6 +395,9 @@ Flex items Alignment
     justify-content: center;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
 .align-items-end {
     align-items: flex-end;
 }

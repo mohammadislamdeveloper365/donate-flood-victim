@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .donate-header {
     padding:15rem 32rem;
     background-image: url('../images/donation9.jpg');
@@ -31,13 +34,72 @@
     max-width:1200px;
     margin:auto;
 }
-.donation-card {
-    padding:2rem;
-    margin-right:4rem;
+
+.donate-card-container .row {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.donation-card {
+    width:100%;
+    padding:2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.donation-card.bg-primary {
+    background-color:rgb(55, 11, 142,0.5);
+}
+
+.donation-card.bg-secondary {
+    background-color: rgba(57, 58, 58, 0.2);
+}
+
+.donation-card.bg-info {
+    background-color: rgb(237, 191, 105,0.5);
+}
+
+.donate-card-container,.donate-life {
+    margin-bottom:5rem;
+}
+
+.donate-life-description {
+    padding:4rem 4rem;
+}
+.donate-life-img img {
+    width:100%;
+}
+
 .rounded-1 {
     border-radius:0.5rem;
 }
+
+.donate-update {
+    max-width: 800px;
+    margin:auto;
+    padding:5rem 4rem;
+}
+
+.donate-update-box {
+    padding:5rem 10rem;
+    background-color: rgb(237, 191, 105,0.5);
+}
+
+.donate-update-box input {
+    padding:0.5rem 1rem;
+    outline:none;
+    border:none;
+}
+
+.donate-footer {
+    background-color: black;
+    padding:5rem 10rem;
+    color:white;
+    font-size: 4rem;
+    font-family: 'Noto Sans Hanunoo', sans-serif;
+}
+
 @media only screen and (min-width:1px) {
     .donate-header {
         padding:15rem 8rem;
@@ -51,8 +113,19 @@
 }
 
 @media only screen and (min-width:768px) {
+
     .donate-header {
         padding:15rem 15rem;
+    }
+    .donation-card.middle {
+        margin:0 2rem;
+    }
+    .donate-card-container .row {
+        flex-direction: row;
+    }
+
+    .donation-card {
+        margin-bottom:0;
     }
 }
 @media only screen and (min-width:992px) {
