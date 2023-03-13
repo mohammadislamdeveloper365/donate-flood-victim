@@ -1,13 +1,36 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .donate-header {
-    padding:15rem 32rem;
     background-image: url('../images/donation9.jpg');
     background-repeat:no-repeat;
     background-size:cover;
 }
 
+.donate-header-body {
+    padding:15rem 32rem;
+}
+
+.donate-header-logo {
+    font-family: 'Lobster', cursive;
+    font-size:4rem;
+    font-style: italic;
+    text-shadow: 1rem 0.5rem 0.5rem red;
+}
+
+.fa-solid {
+    font-size: 4rem;
+}
+
+.donate-header-main-menu {
+    list-style: none;
+}
+
+.donate-header-main-menu a {
+    text-decoration: none;
+    cursor:grab;
+}
 .donate-amount-container {
     max-width:1000px;
     margin:auto;
@@ -94,27 +117,21 @@ body {
 
 .donate-footer {
     background-color: black;
-    padding:5rem 10rem;
     color:white;
-    font-size: 4rem;
-    font-family: 'Noto Sans Hanunoo', sans-serif;
+    font-style: italic;
+    font-family:'Pacifico', cursive;
 }
 
 @media only screen and (min-width:1px) {
-    .donate-header {
+    .donate-header-body {
         padding:15rem 8rem;
     }
 }
 
-@media only screen and (min-width:575px) {
-    .donate-header {
-        padding:15rem 12rem;
-    }
-}
 
 @media only screen and (min-width:768px) {
 
-    .donate-header {
+    .donate-header-body {
         padding:15rem 15rem;
     }
     .donation-card.middle {
@@ -129,21 +146,62 @@ body {
     }
 }
 @media only screen and (min-width:992px) {
-    .donate-header {
+    .donate-header-body {
         padding:15rem 18rem;
     }
 }
 @media only screen and (min-width:1200px) {
-    .donate-header {
+    .donate-header-body {
         padding:15rem 24rem;
     }
 }
 @media only screen and (min-width:1400px) {
-    .donate-header {
+    .donate-header-body {
         padding:15rem 28rem;
     }
 }
 
+
+@media only screen and (max-width:700px) {
+    .donate-header-open-menu {
+        display:block;
+        position:absolute;
+        right:1rem;
+        cursor:grab;
+    }
+
+
+    .donate-header-main-menu {
+        flex-direction: column;
+        position:fixed;
+        height:100vh;
+        right:0;
+        left:0;
+        top:-100%;
+        background-color: rgb(0, 0, 0,0.8);
+        justify-content: center;
+        align-items: center;
+        transition:top 0.5s ease;
+    }
+
+    .donate-header-close-menu {
+        position:fixed;
+        z-index: 2;
+        font-size: 4rem;
+        right:1rem;
+        top:1rem;
+        cursor:grab;
+    }
+
+    .donate-header-main-menu a {
+        transition: font-size 0.2s ease, color 0.2s ease;
+    }
+
+    .donate-header-main-menu a:hover {
+        font-size: 3rem;
+        color:var(--color-info);
+    }
+}
 
 
 
